@@ -1,0 +1,235 @@
+/*
+ Theme Name:   Anissa Child
+ Theme URI:    http://example.com/anissa-child/
+ Description:  Anissa Child - Anissa
+ Author:       Sarah Montoro
+ Author URI:   http://example.com
+ Template:     Anissa
+ Version:      1.0.0
+ Text Domain:  anissa-child
+*/
+
+	
+@import url("../Anissa/style.css");
+
+/**BASE STYLES**/
+h1 {
+	font-size: 30px;
+	font-style: italic;
+}
+
+/**HOME**/
+
+.intro {
+	height: 300px;
+	text-align: center;
+	font-size: 18px;
+	margin: 0 150px 50px 150px;
+	border-bottom: solid 1px;
+}
+
+.learn-more-button {
+	width: 150px;
+	padding: 15px;
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	background: #748982;
+	color: white;
+	margin: auto;
+}
+
+
+.slider {
+	padding-left: 85px;
+	border-bottom: solid 1px;
+	height: 600px;
+	margin: auto;
+}
+
+.event-info {
+	margin-top: 50px;
+	height: 600px;
+	border-bottom: solid 1px;
+}
+
+.event-info h1 {
+	text-align: center;
+}
+
+.when {
+	float: left;
+	width: 50%;
+	text-align: center;
+	padding-left: 75px;
+}
+
+.tickets {
+	width: 50%;
+	text-align: center;
+	float: right;
+	padding-right: 75px;
+}
+
+.ticket-button {
+	width: 200px;
+	padding: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	background: #748982;
+	color: white;
+	margin: auto;
+}
+
+.partners {
+	margin-top: 50px;
+	height: 500px;
+	text-align: center;
+}
+
+.sponsors {
+	float: left;
+	width: 50%;
+}
+
+.cultural-partners {
+	float: right;
+	width: 50%;
+}
+
+
+/**SPONSORSHIPS**/
+
+.intro-sponsors {
+	font-size: 18px;
+	height: 450px;
+}
+
+.intro-sponsors-left {
+	float: left;
+	width: 50%;
+}
+
+.intro-sponsors-right {
+	padding: 75px 0 0 100px;
+	float: right;
+	width: 50%;
+}
+
+.intro-sponsors-right p {
+	border-style: solid;
+    border-width: 5px;
+    padding: 25px;
+}
+
+.slider-sponsors {
+	margin-left: 200px;
+	height: 600px;
+}
+
+/**ABOUT**/
+
+.about-content {
+	width: 65%;
+	float: left;
+	border-bottom: solid 1px;
+}
+
+.about-enterprise {
+	width: 65%;
+	float: left;
+}
+
+iframe {
+	margin-left: 100px;
+}
+
+/**TICKETS**/
+
+.tickets-intro {
+	text-align: center;
+	font-size: 18px;
+	margin: 0 150px 0 150px;
+	padding-bottom: 25px;
+	border-bottom: solid 1px;
+}
+
+.tickets-html {
+	border-bottom: solid 1px;
+	text-align: center;
+	margin: 0 100px 0 100px;
+	padding: 50px 0 50px 0;
+
+}
+
+.donate-left {
+	width: 45%;
+	float: left;
+}
+
+.donate {
+	padding: 50px 0 50px 0;
+}
+
+.donate-button {
+	width: 200px;
+	padding: 15px 25px 15px 25px;
+	text-align: center;
+	text-transform: uppercase;
+	background: #748982;
+	color: white;
+	margin-left: 200px;
+}
+
+.donate-video {
+	width: 45%;
+	margin-top: 60px;
+}
+
+/**COLLECTIONS**/
+
+.collections-intro h1 {
+	text-align: center;
+}
+
+.collections-intro {
+	width: 960px;
+	margin: auto;
+}
+
+.collection {
+	width: 960px;
+	margin: auto;
+	border-bottom: 1px solid;
+}
+
+.collection-last {
+	width: 960px;
+	margin: auto;
+}
+
+/**ART AUCTION**/
+
+.auction-intro {
+	text-align: center;
+}
+
+/**FOOTER**/
+#text-7 .widget-title {
+	text-align: center;
+}
+
+#text-7 {
+	text-align: center;
+	margin-right: 50px;
+}
+
+#wpforms-widget-4 {
+	margin-right: 50px;
+}
+
+.widget-area img{
+	margin-top: 50px;
+}
+
+
