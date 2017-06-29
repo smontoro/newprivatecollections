@@ -10,8 +10,6 @@ get_header(); ?>
 
 <section class="collections">
 
-<?php if ( have_posts()): ?>
-
 			<?php while ( have_posts() ) : the_post();
 		$collection_title_1 = get_field('collection_title_1');
 		$collection_location_1 = get_field('collection_location_1');
@@ -68,89 +66,112 @@ get_header(); ?>
 			<p><?php echo the_content(); ?></p>		
 		</section>
 
+	<?php if($collection_title_1): ?>
 		<section class="collection">
 			<h4><?php echo $collection_title_1; ?></h4>
 			<h6><?php echo $collection_location_1; ?></h6>
 			<h5><?php echo $collection_genre_1; ?></h5>
 			<p><?php echo $collection_description_1; ?></p>
 		</section>
+	<?php endif; ?>
 
+	<?php if($collection_title_2): ?>
 		<section class="collection">
 			<h4><?php echo $collection_title_2; ?></h4>
 			<h6><?php echo $collection_location_2; ?></h6>
 			<h5><?php echo $collection_genre_2; ?></h5>
 			<p><?php echo $collection_description_2; ?></p>
-	
 		</section>
+	<?php endif; ?>
 
+	<?php if($collection_title_3): ?>
 		<section class="collection">
 			<h4><?php echo $collection_title_3; ?></h4>
 			<h6><?php echo $collection_location_3; ?></h6>
 			<h5><?php echo $collection_genre_3; ?></h5>
 			<p><?php echo $collection_description_3; ?></p>
 		</section>
+	<?php endif; ?>
 
+	<?php if($collection_title_4): ?>
 		<section class="collection">
 			<h4><?php echo $collection_title_4; ?></h4>
 			<h6><?php echo $collection_location_4; ?></h6>
 			<h5><?php echo $collection_genre_4; ?></h5>
 			<p><?php echo $collection_description_4; ?></p>
 		</section>
+	<?php endif; ?>
 
+	<?php if($collection_title_5): ?>
 		<section class="collection">
 			<h4><?php echo $collection_title_5; ?></h4>
 			<h6><?php echo $collection_location_5; ?></h6>
 			<h5><?php echo $collection_genre_5; ?></h5>
 			<p><?php echo $collection_description_5; ?></p>
 		</section>
+	<?php endif; ?>
 
+	<?php if($collection_title_6): ?>
 		<section class="collection">
 			<h4><?php echo $collection_title_6; ?></h4>
 			<h6><?php echo $collection_location_6; ?></h6>
 			<h5><?php echo $collection_genre_6; ?></h5>
 			<p><?php echo $collection_description_6; ?></p>
 		</section>
+	<?php endif; ?>
 
+
+	<?php if($collection_title_7): ?>
 		<section class="collection">
 			<h4><?php echo $collection_title_7; ?></h4>
 			<h6><?php echo $collection_location_7; ?></h6>
 			<h5><?php echo $collection_genre_7; ?></h5>
 			<p><?php echo $collection_description_7; ?></p>
 		</section>
+	<?php endif; ?>
 
+
+	<?php if($collection_title_8): ?>
 		<section class="collection">
 			<h4><?php echo $collection_title_8; ?></h4>
 			<h6><?php echo $collection_location_8; ?></h6>
 			<h5><?php echo $collection_genre_8; ?></h5>
 			<p><?php echo $collection_description_8; ?></p>
 		</section>
+	<?php endif; ?>
 
+	<?php if($collection_title_9): ?>
 		<section class="collection">
 			<h4><?php echo $collection_title_9; ?></h4>
 			<h6><?php echo $collection_location_9; ?></h6>
 			<h5><?php echo $collection_genre_9; ?></h5>
 			<p><?php echo $collection_description_9; ?></p>
 		</section>
+	<?php endif; ?>
 
+	<?php if($collection_title_10): ?>
 		<section class="collection">
 			<h4><?php echo $collection_title_10; ?></h4>
 			<h6><?php echo $collection_location_10; ?></h6>
 			<h5><?php echo $collection_genre_10; ?></h5>
 			<p><?php echo $collection_description_10; ?></p>
 		</section>
+	<?php endif; ?>
 
-		<section class="collection-last">
+	<?php if($collection_title_11): ?>
+		<section class="collection">
 			<h4><?php echo $collection_title_11; ?></h4>
 			<h6><?php echo $collection_location_11; ?></h6>
 			<h5><?php echo $collection_genre_11; ?></h5>
 			<p><?php echo $collection_description_11; ?></p>
 		</section>
+	<?php endif; ?>
 
 </section>
 
 <?php endwhile; ?>
 
-<?php endif; ?>
+
 	<php wp_reset_query(); ?>
 
 	

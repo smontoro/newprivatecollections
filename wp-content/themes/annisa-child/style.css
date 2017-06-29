@@ -18,6 +18,25 @@ h1 {
 	font-style: italic;
 }
 
+/**HEADER**/
+.site-title, .site-title a {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 75px;
+    font-style: normal;
+}
+
+.site-description {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.key {
+	margin-bottom: 40px;
+}
+
+
 /**HOME**/
 
 .intro {
@@ -39,6 +58,9 @@ h1 {
 	margin: auto;
 }
 
+.key {
+	margin-top: 25px;
+}
 
 .slider {
 	padding-left: 85px;
@@ -144,6 +166,10 @@ iframe {
 	margin-left: 100px;
 }
 
+.widget {
+	font-size: 15px;
+}
+
 /**TICKETS**/
 
 .tickets-intro {
@@ -192,6 +218,10 @@ iframe {
 	text-align: center;
 }
 
+.collection h5 {
+	text-transform: uppercase;
+}
+
 .collections-intro {
 	width: 960px;
 	margin: auto;
@@ -201,11 +231,6 @@ iframe {
 	width: 960px;
 	margin: auto;
 	border-bottom: 1px solid;
-}
-
-.collection-last {
-	width: 960px;
-	margin: auto;
 }
 
 /**ART AUCTION**/
