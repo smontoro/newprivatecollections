@@ -18,31 +18,45 @@ get_header(); ?>
 	$ticket_html= get_field('ticket_html');
 	?>
 
+<div class="container my-5">
 
-	<section class="tickets-intro">
-			<h1><?php echo the_title(); ?></h1>
-			<p><?php echo the_content(); ?></p>
-	</section>
+<!-- TICKETS
+============================ -->
+	<div class="row mb-5">
+		<div class="col">
+			<section class="tickets-intro">
+				<h1 class="text-center"><?php echo the_title(); ?></h1>
+				<p><?php echo the_content(); ?></p>
+			</section>
 
-	<section class="tickets-html">
-			<?php echo $ticket_html; ?>
-	</section>
-
-
-	<section class="donate">
-
-		<div class="donate-left">
-			<h1><?php echo $donate_title; ?></h1>
-			<p><?php echo $donate_info; ?></p>
-			<a class="donate-button" href="http://enterpriseforyouth.org/donate/">Donate</a>
+			<section class="tickets-html">
+				<?php echo $ticket_html; ?>
+			</section>
 		</div>
+	</div><!--row-->
 
-		<iframe class="donate-video" width="560" height="315" src="https://www.youtube.com/embed/T4HLfy3NYBo?list=PLXqgINAqvUtznpotMpBFXVq9GP3ZGG3-S" frameborder="0" allowfullscreen></iframe>
+		<hr>
 
-	</section>
+<!-- DONATIONS
+============================ -->
+		<section class="row">
+			<div class="col-sm-6">
+				<h1 class="text-center"><?php echo $donate_title; ?></h1>
+				<p><?php echo $donate_info; ?></p>
+				<div class="text-center">
+					<button class="btn btn-primary btn-outline-dark">
+						<a href="http://enterpriseforyouth.org/donate/">Donate</a>
+					</button>
+				</div>
+			</div>
+
+			<div class="col-sm-6 mt-5">
+				<iframe class="donate-video" width="560" height="315" src="https://www.youtube.com/embed/T4HLfy3NYBo?list=PLXqgINAqvUtznpotMpBFXVq9GP3ZGG3-S" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</section>
 
 
-
+</div><!--container-->
 
 	<?php endwhile; ?>
 	<php wp_reset_query(); ?>
