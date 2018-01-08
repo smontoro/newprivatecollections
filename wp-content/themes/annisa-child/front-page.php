@@ -11,7 +11,6 @@ get_header(); ?>
 
 	<?php while ( have_posts() ) : the_post();
 		$event_info_section = get_field('event_info_section');
-		$when_subtitle= get_field('when_subtitle');
 		$date= get_field('date');
 		$event_date= get_field('event_date');
 		$tours= get_field('tours');
@@ -31,50 +30,75 @@ get_header(); ?>
 		$size= "full";
 	?>
 
-
-	<section class="intro">
+<div class="content container">
+<!-- INTRODUCTION
+	===========================================-->
+	<section class="intro text-center my-5 mx-auto">
 		<h1><?php echo the_title(); ?></h1>
 		<p><?php echo the_content(); ?></p>
-		<a class="learn-more-button" href="http://localhost:8888/newprivatecollections/about/">Learn More</a>
+		<button class="btn btn-primary btn-outline-dark">
+			<a href="http:/sfprivatecollections.org/about/">Learn More</a>
+		</button>
 	</section>
 
-	<section class="slider">
-		<?php echo do_shortcode("[metaslider id=28]"); ?>	
+
+<!-- SLIDER
+	===========================================-->
+	<section class="slider row">
+		<div class="mx-auto mt-5">
+			<?php echo do_shortcode("[metaslider id=28]"); ?>
+		</div>
 	</section>
 
-	<section class="event-info">
-		<h1><?php echo $event_info_section; ?></h1>
-			<div class="when">
-				<h2><?php echo $when_subtitle; ?></h2>
-				<h3><?php echo $date; ?></h3>
-				<p><?php echo $event_date; ?></p>
-				<h3><?php echo $tours; ?></h3>
-				<p><?php echo $tour_hours; ?><p>
-				<h3><?php echo $post_party; ?></h3>
-				<p><?php echo $post_party_hours; ?></p>
-			</div>
+	
 
-			<div class="tickets">
-				<h2><?php echo $tickets_subtitle; ?></h2>
-				<h3><?php echo $masterpiece; ?></h3>
-				<p><?php echo $masterpiece_price; ?></p>
-				<h3><?php echo $premier; ?></h3>
-				<p><?php echo $premier_price; ?></p> 
-				<a class="ticket-button" href="http://localhost:8888/newprivatecollections/tickets/">Purchase Tickets</a>
-			</div>
+<!-- EVENT
+	===========================================-->
+	<section class="event-info text-center my-5">
+		<h1 class="my-5"><?php echo $event_info_section; ?></h1>	
+			
+		<div class="row">
+				<div class="when col-sm-6">
+					<h2><?php echo $date; ?></h2>
+					<p id="date"><?php echo $event_date; ?></p>
+					<h4><?php echo $tours; ?></h4>
+					<p><?php echo $tour_hours; ?><p>
+					<h4><?php echo $post_party; ?></h4>
+					<p><?php echo $post_party_hours; ?></p>
+				</div>
+
+				<div class="tickets col-sm-6">
+					<h2><?php echo $tickets_subtitle; ?></h2>
+					<h3><?php echo $masterpiece; ?></h3>
+					<p><?php echo $masterpiece_price; ?></p>
+					<h3><?php echo $premier; ?></h3>
+					<p><?php echo $premier_price; ?></p> 
+					<button class="btn btn-primary btn-outline-dark">
+						<a href="http:/sfprivatecollections.org/tickets/">Purchase Tickets</a>
+					</button>
+				</div>
+		</div><!--row-->
 	</section>
 
-	<section class="partners">
+	<hr>
+
+
+<!-- PARTNERS
+	===========================================-->
+	<section class="text-center my-5">
 		<h1><?php echo $partner_info_section; ?></h1>
-			<div class="sponsors">
+		<div class="row">
+			
+			<div class="col-sm-6">
 				<h2><?php echo $sponsors_year; ?></h2>
 				<figure><?php echo wp_get_attachment_image ($sponsor_logo, $size); ?></figure>
 			</div>
 
-			<div class="cultural-partners">
+			<div class="col-sm-6">
 				<h2><?php echo $cultural_partners_year; ?></h2>
 				<figure><?php echo wp_get_attachment_image ($cultural_partners_logo, $size); ?></figure>
 			</div>
+		</div>
 	</section>
 
 
@@ -85,7 +109,6 @@ get_header(); ?>
 <?php endwhile; ?>
 	<php wp_reset_query(); ?>
 
-
-</body>
+ </div><!--content-->
 
 <?php get_footer();
