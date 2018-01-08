@@ -14,19 +14,15 @@ get_header(); ?>
 
 <?php while ( have_posts() ) : the_post();?>
 
-	<section class="auction-intro">
+<div class="my-5">
+	<section class="text-center">
 		<h1><?php the_title(); ?></h1>
 		<p><?php the_content(); ?></p>
 	</section>
 
-<?php echo do_shortcode("[gs_pinterest]"); ?>
+	<?php echo do_shortcode("[gs_pinterest]"); ?>
 
-
-
-
-
-
-
+</div>
 
 
 	<?php endwhile; ?>
