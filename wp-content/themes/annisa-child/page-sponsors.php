@@ -16,17 +16,25 @@ get_header(); ?>
 	$contact = get_field('contact');
 ?>
 
+<div class="container my-5 sponsors">
+	<div class="row">
 
-	<section class="intro-sponsors">
-		<div class="intro-sponsors-left">
-			<h1><?php echo the_title(); ?></h1>
+<!-- SPONSORSHIPS
+======================= -->		
+		<div class="col-sm-7">
+			<h1 class="text-center"><?php echo the_title(); ?></h1>
 			<p><?php echo the_content(); ?></p>
 		</div>
 
-		<div class="intro-sponsors-right">
-			<p><?php echo $contact; ?></p>
+
+<!-- CONTACT
+======================= -->				
+		<div class="col-sm-4 sponsor-aside pt-4">
+			<p class="text-center"><?php echo $contact; ?></p>
 		</div>
-	</section>
+
+	</div><!--row-->
+</div><!--container-->
 
 
 
