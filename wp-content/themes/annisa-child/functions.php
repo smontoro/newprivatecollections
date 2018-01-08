@@ -26,8 +26,10 @@
  */
 
 //Custom post types collections function
-
-
+function anissa_custom_enqueue_child_theme_styles() {
+    wp_enqueue_style('parent-theme-css', get_template_directory_uri() . '/style.css');
+}
+add_action('wp_enqueue_scripts', 'anissa_custom_enqueue_child_theme_styles');
 
 function create_custom_post_types() {
 
@@ -44,10 +46,6 @@ function create_custom_post_types() {
 				),
 			)
 		);
-
-
-
-
 }
 	
 
