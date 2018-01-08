@@ -1,52 +1,76 @@
 /*
+
  Theme Name:   Anissa Child
+
  Theme URI:    http://example.com/anissa-child/
+
  Description:  Anissa Child - Anissa
+
  Author:       Sarah Montoro
+
  Author URI:   http://example.com
- Template:     Anissa
+
+ Template:     anissa
+
  Version:      1.0.0
+
  Text Domain:  anissa-child
+
+
+ secondary color: #748982;
+
 */
 
-	
-@import url("../Anissa/style.css");
+/*@import url("../Anissa/style.css");*/
 
-/**BASE STYLES**/
+/** BASE STYLES
+================================ **/
+.site-content {
+	padding: 0;
+	margin: 0;
+}
+
 h1 {
-	font-size: 30px;
+	font-size: 22px;
 	font-style: italic;
 }
 
-/**HEADER**/
+@media (min-width: 992px) {
+	h1 {
+		font-size: 30px;
+	}
+}
+
+.btn {
+	font-family: 'Playfair Display', serif;
+	text-transform: none;
+}
+
+
+/** HEADER
+================================ **/
 .site-title, .site-title a {
-    color: white;
+    color: #fff;
     font-family: 'Playfair Display', serif;
-    font-size: 75px;
+    font-size: 45px;
     font-style: normal;
 }
 
 .site-description {
-    color: white;
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
 
-.key {
-	margin-bottom: 40px;
+@media (min-width: 992px) {
+	.site-title, .site-title a {
+		font-size: 75px;
+	}
 }
 
 
-/**HOME**/
-
-.intro {
-	height: 300px;
-	text-align: center;
-	font-size: 18px;
-	margin: 0 150px 50px 150px;
-	border-bottom: solid 1px;
-}
-
+/** HOME
+================================ **/
 .learn-more-button {
 	width: 150px;
 	padding: 15px;
@@ -54,43 +78,8 @@ h1 {
 	text-align: center;
 	text-transform: uppercase;
 	background: #748982;
-	color: white;
+	color: #fff;
 	margin: auto;
-}
-
-.key {
-	margin-top: 25px;
-}
-
-.slider {
-	padding-left: 85px;
-	border-bottom: solid 1px;
-	height: 600px;
-	margin: auto;
-}
-
-.event-info {
-	margin-top: 50px;
-	height: 600px;
-	border-bottom: solid 1px;
-}
-
-.event-info h1 {
-	text-align: center;
-}
-
-.when {
-	float: left;
-	width: 50%;
-	text-align: center;
-	padding-left: 75px;
-}
-
-.tickets {
-	width: 50%;
-	text-align: center;
-	float: right;
-	padding-right: 75px;
 }
 
 .ticket-button {
@@ -99,162 +88,109 @@ h1 {
 	text-align: center;
 	text-transform: uppercase;
 	background: #748982;
-	color: white;
-	margin: auto;
-}
-
-.partners {
-	margin-top: 50px;
-	height: 500px;
-	text-align: center;
-}
-
-.sponsors {
-	float: left;
-	width: 50%;
-}
-
-.cultural-partners {
-	float: right;
-	width: 50%;
+	color: #fff;
+	line-height: 60px;
 }
 
 
-/**SPONSORSHIPS**/
-
-.intro-sponsors {
-	font-size: 18px;
-	height: 450px;
-}
-
-.intro-sponsors-left {
-	float: left;
-	width: 50%;
-}
-
-.intro-sponsors-right {
-	padding: 75px 0 0 100px;
-	float: right;
-	width: 50%;
-}
-
-.intro-sponsors-right p {
-	border-style: solid;
-    border-width: 5px;
-    padding: 25px;
-}
-
-.slider-sponsors {
-	margin-left: 200px;
-	height: 600px;
-}
-
-/**ABOUT**/
-
-.about-content {
-	width: 65%;
-	float: left;
-	border-bottom: solid 1px;
-}
-
-.about-enterprise {
-	width: 65%;
-	float: left;
-}
-
-iframe {
-	margin-left: 100px;
-}
-
-.widget {
+/**ABOUT
+================================ **/
+.committee, .host-committee, .board {
+	color: black;
 	font-size: 15px;
+	border: 2px solid #343434;
+	padding: 10px;
+	margin-top: 20px;
 }
 
-/**TICKETS**/
-
-.tickets-intro {
-	text-align: center;
-	font-size: 18px;
-	margin: 0 150px 0 150px;
-	padding-bottom: 25px;
-	border-bottom: solid 1px;
+.committee section p {
+	font-size: 12px;
 }
 
-.tickets-html {
-	border-bottom: solid 1px;
-	text-align: center;
-	margin: 0 100px 0 100px;
-	padding: 50px 0 50px 0;
-
+aside h5 {
+	font-size: 15px;	
+	font-weight: 700;	
 }
 
-.donate-left {
-	width: 45%;
-	float: left;
+@media (min-width: 768px) {
+	.about-aside {
+		margin-top: 100px;
+		margin-left: 75px;
+	}
+	.committee, .host-committee, .board {
+		font-size: 13px;
+	}
+	aside h5 {
+		font-size: 12px;
+	}
 }
 
-.donate {
-	padding: 50px 0 50px 0;
+
+/** SPONSORSHIPS 
+================================ **/
+.sponsor-aside {
+	color: black;
+	font-size: 15px;
+	padding: 10px;
+	border: 2px solid #343434;
+	margin: 20px;
 }
 
-.donate-button {
-	width: 200px;
-	padding: 15px 25px 15px 25px;
-	text-align: center;
-	text-transform: uppercase;
-	background: #748982;
-	color: white;
-	margin-left: 200px;
+@media (min-width: 768px){
+	.sponsors {
+		padding-bottom: 100px;
+	}
+	.sponsor-aside  {
+		margin: 100px 0 0 75px;
+	
+	}
 }
 
-.donate-video {
-	width: 45%;
-	margin-top: 60px;
+
+/**TICKETS
+================================ **/
+
+
+@media (min-width: 768px) {
+	.tickets-intro {
+		text-align: center;
+	}
 }
 
-/**COLLECTIONS**/
 
-.collections-intro h1 {
-	text-align: center;
-}
-
+/**COLLECTIONS
+================================ **/
 .collection h5 {
 	text-transform: uppercase;
 }
 
-.collections-intro {
-	width: 960px;
-	margin: auto;
+.collection-intro {
+	width: 70%;
 }
 
-.collection {
-	width: 960px;
-	margin: auto;
-	border-bottom: 1px solid;
-}
 
-/**ART AUCTION**/
-
-.auction-intro {
+/** FOOTER 
+================================ **/
+.site-footer {
 	text-align: center;
 }
 
-/**FOOTER**/
-#text-7 .widget-title {
-	text-align: center;
+.widget-title {
+	color: #fff;
+	font-style: normal;
+	font-size: 20px;
+	font-weight: lighter;
 }
 
-#text-7 {
-	text-align: center;
-	margin-right: 50px;
+footer {
+	background-color: #748982;
 }
 
-#wpforms-widget-4 {
-	margin-right: 50px;
+#wpforms-177-field_1 {
+	width: 60%;
+	display: inline;
 }
 
-.widget-area img{
-	margin-top: 50px;
-}
+
 
 
