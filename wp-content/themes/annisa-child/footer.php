@@ -2,51 +2,53 @@
 /**
  * The template for displaying the footer.
  *
- * Contains the closing of the #content div and all content after
- *
  * @package anissa
  */
 
 ?>
-</div>
-<!-- #content -->
-</div>
-<!-- .wrap  -->
-<footer id="colophon" class="site-footer wrap" role="contentinfo">
+
+
+<footer id="colophon" class="py-5 container-fluid" role="contentinfo">
   <?php if ( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer-2' ) || is_active_sidebar( 'footer-3' ) ) : ?>
-  <div class="footer-widgets clear">
-    <div class="widget-area">
-      <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
-      <?php dynamic_sidebar( 'footer-1' ); ?>
-      <?php endif; ?>
-    </div>
-    <!-- .widget-area -->
-    
-    <div class="widget-area">
-     <?php if ( is_active_sidebar( 'footer-2' ) ) : ?>
-      <?php dynamic_sidebar( 'footer-2' ); ?>
-      <?php endif; ?>
-    </div>
-    <!-- .widget-area -->
-    
-    <div class="widget-area">
-      <img src="http://localhost:8888/newprivatecollections/wp-content/uploads/2017/05/enterprise-footer.png">
-    </div>
-    <!-- .widget-area --> 
 
-    
-  </div>
-  <!-- .footer-widgets -->
+    <div class="row text-white mx-auto">
 
+    <!-- CONTACT
+    ========================================-->                 
+          <div class="widget-area col-sm-4 text-center">
+            <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
+            <?php dynamic_sidebar( 'footer-1' ); ?>
+            <?php endif; ?>
+          </div>
+          <!-- .widget-area -->
+
+    <!-- SIGN UP
+    =========================================-->
+          <div class="widget-area col-sm-4">
+            <div class="text-center">
+           <?php if ( is_active_sidebar( 'footer-2' ) ) : ?>
+            <?php dynamic_sidebar( 'footer-2' ); ?>
+            <?php endif; ?>
+          </div>
+          </div>
+          <!-- .widget-area -->
+          
+    <!-- LOGO
+    =========================================-->
+          <div class="widget-area col-sm-4 mt-5 text-center">
+            <img src="http://sfprivatecollections.org/wp-content/uploads/2017/05/enterprise-footer.png">
+          </div>
+          <!-- .widget-area --> 
   
   <?php endif; ?>
-  <div class="site-info"> <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'anissa' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'anissa' ), 'WordPress' ); ?></a> <span class="sep"> | </span> <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'anissa' ), 'Anissa', '<a href="https://alienwp.com/" rel="designer">AlienWP</a>' ); ?> </div>
-  <!-- .site-info --> 
+ 
+  </div><!--row-->
 </footer>
-<!-- #colophon -->
-</div>
-<!-- #page -->
-
 
 <?php wp_footer(); ?>
-</body></html>
+
+</body>
+</html>
+
+
+
