@@ -189,6 +189,7 @@ footer {
 #wpforms-177-field_1 {
 	width: 60%;
 	display: inline;
+	text-align: center;
 }
 
 button.wpforms-submit {
@@ -197,9 +198,16 @@ button.wpforms-submit {
     color: #fff !important;
     border-radius: .25rem !important;
     font-family: "Playfair Display", serif !important;
+   	display: inline-block !important;
 }
 
 .wpforms-field-label {
 	display: none !important;
 }
+
+.wpforms-field-html {
+	display: inline-block !important;
+}
+
+
 
