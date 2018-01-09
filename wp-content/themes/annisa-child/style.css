@@ -199,3 +199,7 @@ button.wpforms-submit {
     font-family: "Playfair Display", serif !important;
 }
 
+.wpforms-field-label {
+	display: none !important;
+}
+
