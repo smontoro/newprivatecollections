@@ -171,19 +171,12 @@ aside h5 {
 
 /** FOOTER 
 ================================ **/
-.site-footer {
-	text-align: center;
+#colophon {
+	background-color: #E9EBEE;
 }
 
-.widget-title {
-	color: #fff;
-	font-style: normal;
-	font-size: 20px;
-	font-weight: lighter;
-}
-
-footer {
-	background-color: #748982;
+.wpforms-title {
+	font-family: 'Playfair Display', serif;
 }
 
 #wpforms-177-field_1 {
@@ -194,11 +187,15 @@ footer {
 
 button.wpforms-submit {
     background-color: transparent !important;
-    border: 1px solid #fff !important;
-    color: #fff !important;
+    border: 1px solid #343a40 !important;
+    color: #343a40 !important;
     border-radius: .25rem !important;
     font-family: "Playfair Display", serif !important;
    	display: inline-block !important;
+   	width: 150px !important;
+   	font-weight: 400 !important;
+   	font-size: 1rem !important;
+   	letter-spacing: 2.5px !important;
 }
 
 .wpforms-field-label {
@@ -208,6 +205,26 @@ button.wpforms-submit {
 .wpforms-field-html {
 	display: inline-block !important;
 }
+
+.footer-hr {
+	width: 50%;
+}
+
+#footer-social li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 20px;
+
+}
+
+.site-footer {
+	text-align: center;
+}
+
+.custom-html-widget p{
+	font-size: 16px;
+}
+
 
 
 
