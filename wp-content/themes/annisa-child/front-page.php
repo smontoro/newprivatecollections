@@ -22,6 +22,8 @@ get_header(); ?>
 		$masterpiece_price= get_field('masterpiece_price');
 		$premier= get_field('premier');
 		$premier_price= get_field('premier_price');
+		$honorary_chair= get_field('honorary_chair');
+
 		$partner_info_section= get_field('partner_info_section');
 		$sponsors_year= get_field('sponsors_year');
 		$sponsor_logo= get_field('sponsor_logo');
