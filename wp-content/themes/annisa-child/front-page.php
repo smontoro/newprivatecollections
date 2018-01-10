@@ -57,8 +57,8 @@ get_header(); ?>
 <!-- EVENT
 	===========================================-->
 	<section class="event-info text-center my-5">
-		<h1 class="my-5"><?php echo $event_info_section; ?></h1>	
-		<h3><?php echo $honorary_chair; ?></h3>
+		<h1 class="mt-5"><?php echo $event_info_section; ?></h1>	
+		<h4 class="my-5"><?php echo $honorary_chair; ?></h4>
 			
 		<div class="row">
 				<div class="when col-sm-6">
