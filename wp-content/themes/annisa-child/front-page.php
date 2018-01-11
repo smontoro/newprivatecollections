@@ -38,9 +38,7 @@ get_header(); ?>
 	<section class="intro text-center my-5 mx-auto">
 		<h1><?php echo the_title(); ?></h1>
 		<p><?php echo the_content(); ?></p>
-		<button class="btn btn-primary btn-outline-dark">
-			<a href="http:/sfprivatecollections.org/about/">Learn More</a>
-		</button>
+			<a class="btn btn-primary btn-outline-dark" href="http:/sfprivatecollections.org/about/">Learn More</a>
 	</section>
 
 
@@ -76,9 +74,7 @@ get_header(); ?>
 					<p><?php echo $masterpiece_price; ?></p>
 					<h3><?php echo $premier; ?></h3>
 					<p><?php echo $premier_price; ?></p> 
-					<button class="btn btn-primary btn-outline-dark">
-						<a href="http:/sfprivatecollections.org/tickets/">Purchase Tickets</a>
-					</button>
+					<a class="btn btn-primary btn-outline-dark" href="http:/sfprivatecollections.org/tickets/">Purchase Tickets</a>
 				</div>
 		</div><!--row-->
 	</section>
