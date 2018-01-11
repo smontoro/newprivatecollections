@@ -44,9 +44,7 @@ get_header(); ?>
 				<h1 class="text-center"><?php echo $donate_title; ?></h1>
 				<p><?php echo $donate_info; ?></p>
 				<div class="text-center">
-					<button class="btn btn-primary btn-outline-dark">
-						<a href="http://enterpriseforyouth.org/donate/">Donate</a>
-					</button>
+					<a class="btn btn-primary btn-outline-dark" href="http://enterpriseforyouth.org/donate/">Donate</a>
 				</div>
 			</div>
 
