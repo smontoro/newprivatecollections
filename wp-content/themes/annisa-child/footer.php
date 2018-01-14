@@ -55,16 +55,16 @@
     </section>
 
 
- <!-- ENTERPRISE
+  <!-- ENTERPRISE
     =========================================--> 
     <section class="container-fluid">
       <div class="row text-center">
-          <div class="col-sm-6 mt-4">
+          <div class="col-sm-6 mt-5">
            <?php if ( is_active_sidebar( 'footer-2' ) ) : ?>
             <?php dynamic_sidebar( 'footer-2' ); ?>
             <?php endif; ?>
           </div>
-          <div class="col-sm-6 logo mt-2">
+          <div class="col-sm-6 logo mt-3">
            <?php if ( is_active_sidebar( 'footer-3' ) ) : ?>
             <?php dynamic_sidebar( 'footer-3' ); ?>
             <?php endif; ?>
