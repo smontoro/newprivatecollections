@@ -23,8 +23,8 @@ get_header(); ?>
 <!-- TICKETS
 ============================ -->
 	<div class="row mb-5">
-		<div class="col">
-			<section class="tickets-intro">
+		<div class="col-sm-9 text-center mx-auto">
+			<section>
 				<h1 class="text-center"><?php echo the_title(); ?></h1>
 				<p><?php echo the_content(); ?></p>
 			</section>
