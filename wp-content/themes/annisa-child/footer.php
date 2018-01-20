@@ -30,7 +30,7 @@
 
       <ul id="footer-social">
         <li>
-          <a href="https://www.facebook.com/enterpriseforyouth/" target="_blank">
+          <a href="https://www.facebook.com/PrivateCollectionsSF/" target="_blank">
             <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
           </a>
         </li>
@@ -55,7 +55,7 @@
     </section>
 
 
-  <!-- ENTERPRISE
+ <!-- ENTERPRISE
     =========================================--> 
     <section class="container-fluid">
       <div class="row text-center">
