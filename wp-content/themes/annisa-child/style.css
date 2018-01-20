@@ -16,12 +16,9 @@
 
  Text Domain:  anissa-child
 
-
- secondary color: #748982;
-
 */
 
-/*@import url("../Anissa/style.css");*/
+/*@import url("../anissa-child/style.css");*/
 
 /** BASE STYLES
 ================================ **/
@@ -143,17 +140,6 @@ aside h5 {
 	.sponsor-aside  {
 		margin: 100px 0 0 75px;
 	
-	}
-}
-
-
-/**TICKETS
-================================ **/
-
-
-@media (min-width: 768px) {
-	.tickets-intro {
-		text-align: center;
 	}
 }
 
