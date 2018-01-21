@@ -15,12 +15,16 @@ get_header(); ?>
 <?php while ( have_posts() ) : the_post();?>
 
 <div class="my-5">
-	<section class="text-center">
-		<h1><?php the_title(); ?></h1>
-		<p><?php the_content(); ?></p>
+	<section class="container text-center">
+		<div class="col-sm-8 mx-auto">
+			<h1><?php the_title(); ?></h1>
+			<p class="my-5"><?php the_content(); ?></p>
+		</div>
 	</section>
 
-	<?php echo do_shortcode("[gs_pinterest]"); ?>
+	<section class="py-5">
+		<?php echo do_shortcode("[gs_pinterest]"); ?>
+	</section>
 
 </div>
 
