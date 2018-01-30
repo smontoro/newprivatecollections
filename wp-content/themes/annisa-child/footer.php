@@ -13,8 +13,7 @@
 
     <hr>
     
-
- <!-- SIGN UP
+<!-- SIGN UP
     =========================================-->
     <section class="container mt-5">
       <div class="row">
@@ -28,7 +27,7 @@
 
         <hr class="footer-hr">
 
-      <ul id="footer-social">
+      <ul id="footerSocial">
         <li>
           <a href="https://www.facebook.com/PrivateCollectionsSF/" target="_blank">
             <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
