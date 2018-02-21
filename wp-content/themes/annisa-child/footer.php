@@ -17,7 +17,7 @@
  <!-- SIGN UP
     =========================================-->
     <section class="container mt-5">
-      <p>this is a test</p>
+      <p>this is another test</p>
       <div class="row">
           <div class="widget-area col text-center">
            <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
