@@ -1,0 +1,42 @@
+0239.243 (1) Opened log file at time: Wed, 21 Feb 2018 21:27:22 +0000 on http://localhost:8888/privatecollectionstest
+0239.245 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.14.3 WP: 4.9.4 PHP: 7.0.8 (apache2handler, Darwin sarahs-air.ehss.local 17.4.0 Darwin Kernel Version 17.4.0: Sun Dec 17 09:19:54 PST 2017; root:xnu-4570.41.2~1/RELEASE_X86_64 x86_64) MySQL: 5.5.42 WPLANG: en_US Server: Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/7.0.8 mod_ssl/2.2.29 OpenSSL/0.9.8zh DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 63.5M | 31.3M) multisite: N openssl: OpenSSL 0.9.8y 5 Feb 2013 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0239.248 (1) Free space on disk containing Updraft's temporary directory: 48782.7 MB
+0239.255 (1) Backup run: resumption=1, nonce=532745de3e41, begun at=1519248202 (240s ago), job type=backup, previous check-in=12.1s
+0239.258 (1) Scheduling a resumption (2) after 300 seconds (1519248742) in case this run gets aborted
+0239.265 (1) Checking if we have a zip executable available
+0239.268 (1) Zip engine: found/will use a binary zip: /usr/bin/zip
+0239.270 (1) Creation of backups of directories: already finished
+0239.272 (1) Saving backup status to database (elements: 8)
+0239.280 (1) Database dump (WordPress DB): Creation was completed already
+0239.291 (1) backup_2018-02-21-2123_Private_Collections_8d51231b5282-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0239.296 (1) backup_2018-02-21-2123_Private_Collections_8d51231b5282-themes.zip: themes: This file has already been successfully uploaded
+0239.299 (1) backup_2018-02-21-2123_Private_Collections_8d51231b5282-uploads.zip: uploads: This file has already been successfully uploaded
+0239.302 (1) backup_2018-02-21-2123_Private_Collections_8d51231b5282-others.zip: others: This file has already been successfully uploaded
+0239.305 (1) backup_2018-02-21-2123_Private_Collections_532745de3e41-db.gz: db: Note: This file was not marked as successfully uploaded, but does not exist on the local filesystem (/Users/smontoro/Sites/privatecollectionstest/wp-content/updraft/backup_2018-02-21-2123_Private_Collections_532745de3e41-db.gz)
+0239.311 (1) Recording as successfully uploaded: backup_2018-02-21-2123_Private_Collections_532745de3e41-db.gz (6586a2cad0a40bc0dc3a7dc2f67557af)
+0239.321 (1) Saving backup history. Total backup size: Unknown
+0239.330 (1) Requesting upload of the files that have not yet been successfully uploaded (1)
+0239.340 (1) Cloud backup selection (1/1): email with instance (1/1) (last)
+0239.343 (1) Beginning dispatch of backup to remote (email)
+0239.347 (1) [Warning] backup_2018-02-21-2123_Private_Collections_8d51231b5282-plugins.zip: This backup archive is 21.7 MB in size - the attempt to send this via email is likely to fail (few email servers allow attachments of this size). If so, you should switch to using a different remote storage method.
+0239.350 (1) backup_2018-02-21-2123_Private_Collections_8d51231b5282-plugins.zip: email to: smont...
+0240.585 (1) Mails were not sent successfully
+0240.590 (1) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0240.600 (1) Number of backup sets in history: 2; groups (db): 1
+0240.603 (1) Examining (for databases) backup set with group_id=0, nonce=532745de3e41, datestamp=1519248202 (Feb 21 2018 21:23:22)
+0240.603 (1) This backup set is the backup set just made, so will not be deleted.
+0240.603 (1) Examining (for databases) backup set with group_id=0, nonce=553d9d46d0e7, datestamp=1518483154 (Feb 13 2018 00:52:34)
+0240.603 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+0240.605 (1) Number of backup sets in history: 2; groups (files): 1
+0240.608 (1) Examining (for files) backup set with nonce=532745de3e41, datestamp=1519248202 (Feb 21 2018 21:23:22)
+0240.608 (1) This backup set is the backup set just made, so will not be deleted.
+0240.610 (1) This backup set is the backup set just made, so will not be deleted.
+0240.610 (1) This backup set is the backup set just made, so will not be deleted.
+0240.611 (1) This backup set is the backup set just made, so will not be deleted.
+0240.611 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+0240.613 (1) Examining (for files) backup set with nonce=553d9d46d0e7, datestamp=1518483154 (Feb 13 2018 00:52:34)
+0240.613 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+0240.614 (1) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0240.622 (1) Resume backup (532745de3e41, 1): finish run
+0240.627 (1) There were errors in the uploads, so the 'resume' event is remaining scheduled
+0240.634 (1) The backup has not finished; a resumption is scheduled

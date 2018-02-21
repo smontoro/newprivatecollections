@@ -13,7 +13,8 @@
 
     <hr>
     
-<!-- SIGN UP
+
+ <!-- SIGN UP
     =========================================-->
     <section class="container mt-5">
       <div class="row">
